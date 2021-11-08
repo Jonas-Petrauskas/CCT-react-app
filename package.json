@@ -1,0 +1,22 @@
+{
+  "name": "cct-react-app",
+  "version": "1.0.0",
+  "description": "TypeScript-React project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonas-Petrauskas/CCT-react-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jonas-Petrauskas/CCT-react-app/issues"
+  },
+  "homepage": "https://github.com/Jonas-Petrauskas/CCT-react-app#readme",
+  "dependencies": {
+    "prettier": "^2.4.1"
+  }
+}
