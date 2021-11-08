@@ -4,7 +4,7 @@
   "description": "TypeScript-React project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "prettier --write \"client/**/*.{tsx, ts}\""
   },
   "repository": {
     "type": "git",
