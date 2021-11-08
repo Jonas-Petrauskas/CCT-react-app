@@ -7,6 +7,9 @@ import "./ListItem.css";
 function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
   const paragraphHeight = `${listData.items.length * 51}px`;
   const underlineWidth = {
+    "--underlineWidth": open ? "18.75rem" : "12.5rem",
+  } as React.CSSProperties;
+  const openedlist = {
     "--paragraphHeight": open ? paragraphHeight : "1.25rem",
   } as React.CSSProperties;
 
@@ -21,11 +24,15 @@ function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
   };
   return (
     <div className="list">
-      <div className="section-container" onClick={onChange}>
+      <div
+        className="section-container"
+        onClick={onChange}
+        style={underlineWidth}
+      >
         <div className="section-number">{listNumber}</div>
         <p className="section-title">{listData.title}</p>
       </div>
-      <div className="list-details">
+      <div className="list-details" style={openedlist}>
         {open &&
           listData.items.map((detailsItem, index) => (
             <div className="details-container" key={index}>
@@ -34,7 +41,7 @@ function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
                 {detailsItem.text}{" "}
                 <a
                   href="mailto:careers@cornercasetech.com"
-                  className="details-emails"
+                  className="details-email"
                 >
                   {detailsItem.email}
                 </a>
