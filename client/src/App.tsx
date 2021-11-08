@@ -64,7 +64,17 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">CTT Lab Process</header>
-      <div className="app-content"></div>
+      <div className="app-content">
+        {data.map((dataObject, index) => (
+          <ListItem
+            key={index}
+            listData={dataObject}
+            listNumber={index + 1}
+            open={open === index}
+            setOpen={setOpen}
+          />
+        ))}
+      </div>
     </div>
   );
 }
