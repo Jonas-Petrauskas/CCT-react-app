@@ -7,20 +7,14 @@ import "./ListItem.css";
 function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
   const paragraphHeight = `${listData.items.length * 51}px`;
   const underlineWidth = {
-    "--underlineWidth": open ? "18.75rem" : "12.5rem",
+    "--underlineWidth": open ? "18rem" : "12rem",
   } as React.CSSProperties;
   const openedlist = {
     "--paragraphHeight": open ? paragraphHeight : "1.25rem",
   } as React.CSSProperties;
 
   const onChange = () => {
-    setOpen((prev: number) => {
-      if (prev === listNumber - 1) {
-        return -1;
-      } else {
-        return listNumber - 1;
-      }
-    });
+    setOpen((prev: number) => (prev === listNumber - 1 ? -1 : listNumber - 1));
   };
   return (
     <div className="list">

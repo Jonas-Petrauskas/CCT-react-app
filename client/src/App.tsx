@@ -49,9 +49,6 @@ function App() {
       title: "Reciece anster",
       items: [
         {
-          text: "Create repositor",
-        },
-        {
           text: "Receive answers",
         },
         {

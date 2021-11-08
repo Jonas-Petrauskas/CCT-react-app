@@ -26,12 +26,14 @@
   text-align: center;
   font-size: 38px;
   color: white;
+  cursor: default;
   background: linear-gradient(rgba(0, 169, 167, 1), rgba(0, 186, 137, 1));
 }
 
 .section-title {
   font-size: 1.1rem;
   font-weight: bold;
+  cursor: default;
 }
 
 .list-details {
@@ -67,7 +69,8 @@
     opacity: 1;
   }
 }
-.dertails-item {
+.details-item {
   margin-left: 1.3rem;
   font-family: "Roboto", sans-serif;
+  cursor: default;
 }
