@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import ListItem from "./Components/ListItem";
+import ListItem from "./Components/ListItem/ListItem";
 
 function App() {
   const [open, setOpen] = React.useState<Function | boolean | number | null>(
