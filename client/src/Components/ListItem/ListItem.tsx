@@ -5,6 +5,8 @@ import { ListItemProps } from "../../Interfaces";
 import "./ListItem.css";
 
 function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
+  const paragraphHeight = `${listData.items.length * 51}px`;
+
   const onChange = () => {
     setOpen((prev: number) => {
       if (prev === listNumber - 1) {
