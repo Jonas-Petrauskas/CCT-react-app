@@ -1,8 +1,10 @@
 import React from "react";
 import CheckedIcon from "../CheckedIcon/CheckedIcon";
+import { ListItemProps } from "../../Interfaces";
+
 import "./ListItem.css";
 
-function ListItem() {
+function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
   return (
     <div className="list">
       <div className="section-container">
