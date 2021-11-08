@@ -4,3 +4,19 @@ body {
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
 }
+
+.app {
+  margin: 0 1.25rem 0 1.25rem;
+}
+
+.app-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-header h1 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 4rem;
+}
