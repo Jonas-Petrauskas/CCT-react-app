@@ -11,7 +11,14 @@ function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
         <div className="section-number"></div>
         <p className="section-title"></p>
       </div>
-      <div className="list-details"></div>
+      <div className="list-details">
+        {open &&
+          listData.items.map((detailsItem, index) => (
+            <div className="details-container">
+              <CheckedIcon />
+            </div>
+          ))}
+      </div>
     </div>
   );
 }
