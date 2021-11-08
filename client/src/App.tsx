@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import ListItem from "./Components/ListItem";
 
 function App() {
   const [open, setOpen] = React.useState<Function | boolean | number | null>(
@@ -62,7 +63,8 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header"></header>
+      <header className="app-header">CTT Lab Process</header>
+      <div className="app-content"></div>
     </div>
   );
 }
