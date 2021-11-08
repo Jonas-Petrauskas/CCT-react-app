@@ -6,6 +6,9 @@ import "./ListItem.css";
 
 function ListItem({ listData, listNumber, open, setOpen }: ListItemProps) {
   const paragraphHeight = `${listData.items.length * 51}px`;
+  const underlineWidth = {
+    "--paragraphHeight": open ? paragraphHeight : "1.25rem",
+  } as React.CSSProperties;
 
   const onChange = () => {
     setOpen((prev: number) => {
