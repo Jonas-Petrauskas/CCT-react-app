@@ -2,6 +2,10 @@ import React from "react";
 import "./App.css";
 
 function App() {
+  const [open, setOpen] = React.useState<Function | boolean | number | null>(
+    null
+  );
+
   const data = [
     {
       title: "Build test task",
