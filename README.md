@@ -1,6 +1,6 @@
 # CCT-sliding-sections
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) <img src="assets/react-typescript.svg"/>
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) <img src="assets/react-typescript.svg"/> <img src="assets/css3.svg"/>
 
 The CTT-sliding-sections is a prototype built with React - TypeScript. Using CSS3 animations and transitions the sections with dynamically passed information were made to open and close smoothly, while all logic and functionality were handled with CSS3 variables in React components.
 
