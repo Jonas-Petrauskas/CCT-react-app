@@ -60,10 +60,10 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
+      <header className="app-header" data-testid="header">
         <h1>CTT Lab Process</h1>
       </header>
-      <div className="app-content">
+      <div className="app-content" data-testid="content">
         {data.map((dataObject, index) => (
           <ListItem
             key={index}
